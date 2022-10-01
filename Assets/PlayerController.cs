@@ -57,19 +57,19 @@ public class PlayerController : MonoBehaviour
                 Vector3[] laserPositions = new Vector3[2];
                 laserPositions[0] = nozzle.transform.position;
                 Ray ray = new Ray(transform.position, transform.forward);
-                if (Physics.Raycast(ray, out hit))
+                if (Physics.Raycast(ray, out hit, 100))
                 {
                     //print(hit.transform.position);
                     Instantiate(debrees, hit.point, Quaternion.identity);
 
-                    if (hit.transform != null)
+                    if (hit.point != null)
                     {
                         laserPositions[1] = hit.point;
                         //lRenderer.SetPositions(laserPositions);
                     }
                     else {
                         print("wow");
-                        laserPositions[1] = ray.GetPoint(20);
+                        //laserPositions[1] = ray.GetPoint(20);
                     }
                     
                 }
