@@ -44,4 +44,8 @@ public class Enemy1Behaviour : MonoBehaviour
         }
         lifeSlider.value = (currentLife / maxLife) *10;
     }
+
+    public void DamagePlayer() {
+        player.GetComponent<PlayerController>().PlayerDamage();
+    }
 }

@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed;
+    public float playerMaxLife;
+    public float playerCurrentLife;
+    public GameObject healthBar;
     public GameObject projectile;
     public float fireRatio;
     public Transform nozzle;
@@ -111,5 +115,11 @@ public class PlayerController : MonoBehaviour
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0, -angle +90, 0));
 
+    }
+
+    public void PlayerDamage ()
+    {
+        playerCurrentLife--;
+        healthBar.GetComponent<Slider>().value = (playerCurrentLife / playerMaxLife) * 10;
     }
 }
