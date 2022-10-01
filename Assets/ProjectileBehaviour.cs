@@ -23,7 +23,7 @@ public class ProjectileBehaviour : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag != "Player") {
-            print("ups");
+            //print("ups");
             Destroy(gameObject);
         }
     }
