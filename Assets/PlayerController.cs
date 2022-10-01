@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject debrees;
 
+    public float health;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,17 +61,19 @@ public class PlayerController : MonoBehaviour
                 Ray ray = new Ray(transform.position, transform.forward);
                 if (Physics.Raycast(ray, out hit, 50))
                 {
-                    print(hit.transform.position);
+                    //print(hit.transform.position);
                     Instantiate(debrees, hit.point, Quaternion.identity);
 
+                    print(hit.point);
                     if (hit.point != null)
                     {
+                        print("hit");
                         laserPositions[1] = hit.point;
                         //lRenderer.SetPositions(laserPositions);
                     }
-                    else {
+                    else if (hit.point == null) {
                         print("wow");
-                        laserPositions[1] = ray.GetPoint(20);
+                        laserPositions[1] = ray.GetPoint(5);
                     }
                     
                 }
