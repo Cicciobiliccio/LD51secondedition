@@ -27,7 +27,10 @@ public class ProjectileBehaviour : MonoBehaviour
         if (other.tag != "Player") {
             //print("ups");
             Instantiate(debree, transform.position, Quaternion.identity);
-            other.transform.GetComponent<Enemy1Behaviour>().TakeDamage(damage);
+            if (other.tag == "Enemy") {
+                other.transform.GetComponent<Enemy1Behaviour>().TakeDamage(damage);
+            }
+            
             Destroy(gameObject);
         }
     }

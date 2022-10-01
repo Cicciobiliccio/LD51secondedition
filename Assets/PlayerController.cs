@@ -37,7 +37,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //movement
-        controller.Move(new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")) * speed * Time.deltaTime);
+       // gameObject.transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
+        controller.Move(new Vector3(Input.GetAxisRaw("Horizontal"), -9, Input.GetAxisRaw("Vertical")) * speed * Time.deltaTime);
+       
 
         //Firing projectile
         if (discreteProjectile) {

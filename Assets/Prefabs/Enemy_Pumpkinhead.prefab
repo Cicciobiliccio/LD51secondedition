@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 6171164023750238509}
   - component: {fileID: 6171164023750238508}
   - component: {fileID: 6171164023750238507}
+  - component: {fileID: -1445419656381320020}
   m_Layer: 0
   m_Name: Enemy_Pumpkinhead
   m_TagString: Enemy
@@ -217,7 +218,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -240,6 +241,27 @@ MonoBehaviour:
   currentLife: 10
   lifeSlider: {fileID: 574731628495111966}
   maxLife: 10
+  attackDistance: 1.2
+--- !u!95 &-1445419656381320020
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6171164023750238506}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7a6d9d649b158fc498cc77104a75da40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6171164023903166764
 GameObject:
   m_ObjectHideFlags: 0
