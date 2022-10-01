@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
     
-    public float timer=1;
+    public float timer=2;
 
     public void PlayGame ()
     {   
