@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifespan: 1
+  debree: {fileID: 1444945243125837928, guid: 9ab46caff9c1d5d4a918b8c536248f3d, type: 3}
 --- !u!54 &5171077820053792895
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //movement
-        controller.SimpleMove(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * speed * Time.deltaTime);
+        controller.Move(new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")) * speed * Time.deltaTime);
 
         //Firing projectile
         if (discreteProjectile) {
@@ -64,20 +64,18 @@ public class PlayerController : MonoBehaviour
                     //print(hit.transform.position);
                     Instantiate(debrees, hit.point, Quaternion.identity);
 
-                    print(hit.point);
+                    //print(hit.point);
                     if (hit.point != null)
                     {
-                        print("hit");
+                        //print("hit");
                         laserPositions[1] = hit.point;
                         //lRenderer.SetPositions(laserPositions);
                     }
-                    else if (hit.point == null) {
-                        print("wow");
-                        laserPositions[1] = ray.GetPoint(5);
-                    }
-                    
                 }
-                
+
+                else {
+                    laserPositions[1] = ray.GetPoint(50);
+                }
                 lRenderer.SetPositions(laserPositions);
             }
             else {

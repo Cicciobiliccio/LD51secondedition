@@ -5,6 +5,7 @@ using UnityEngine;
 public class ProjectileBehaviour : MonoBehaviour
 {
     public float lifespan;
+    public GameObject debree;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class ProjectileBehaviour : MonoBehaviour
     {
         if (other.tag != "Player") {
             //print("ups");
+            Instantiate(debree, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

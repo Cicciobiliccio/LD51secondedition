@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Artem.unity
     guid: 0da91b1dc46111d478e3f58a63f0043f
+  - enabled: 1
+    path: Assets/Scenes/Simone.unity
+    guid: 276e59e4a8366bc41b3a61e427641f52
   m_configObjects: {}
