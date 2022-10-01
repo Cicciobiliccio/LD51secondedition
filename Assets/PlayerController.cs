@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
 
     public bool discreteProjectile;
     public bool laser;
+    public float laserDamage;
+    float laserTimer;
+    public float laserFireRatio;
     public GameObject laserObj;
     LineRenderer lRenderer;
 
@@ -52,6 +55,7 @@ public class PlayerController : MonoBehaviour
 
         //Firing Lasers
         if (laser) {
+            laserTimer -= Time.deltaTime;
             RaycastHit hit;
             if (Input.GetButton("Fire1"))
             {
@@ -67,9 +71,16 @@ public class PlayerController : MonoBehaviour
                     //print(hit.point);
                     if (hit.point != null)
                     {
-                        //print("hit");
                         laserPositions[1] = hit.point;
-                        //lRenderer.SetPositions(laserPositions);
+                        if (hit.transform.tag == "Enemy") {
+                            
+                            if (laserTimer <= 0) {
+                                laserTimer = 1 / laserFireRatio;
+                                hit.transform.GetComponent<Enemy1Behaviour>().TakeDamage(laserDamage);
+                                print("hit");
+                            }
+                            
+                        }
                     }
                 }
 

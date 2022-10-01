@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 450659683772388562}
   m_Layer: 0
   m_Name: Enemy_Alien
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +36,7 @@ Transform:
   - {fileID: 450659683891500244}
   - {fileID: 6045361647845419591}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &450659683772388566
 MeshFilter:
@@ -135,6 +135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3411abafb3e8a4e9523861c353d7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLife: 5
+  lifeSlider: {fileID: 6060907479132828391}
+  maxLife: 5
 --- !u!1 &450659683891500245
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +340,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5935106202804402192, guid: 9116b7b904b5ca64e986f21d5dcb0995, type: 3}
+      propertyPath: m_WholeNumbers
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5935106202804402194, guid: 9116b7b904b5ca64e986f21d5dcb0995, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -445,3 +452,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5935106202804402194, guid: 9116b7b904b5ca64e986f21d5dcb0995, type: 3}
   m_PrefabInstance: {fileID: 450659683345615607}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6060907479132828391 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5935106202804402192, guid: 9116b7b904b5ca64e986f21d5dcb0995, type: 3}
+  m_PrefabInstance: {fileID: 450659683345615607}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

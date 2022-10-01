@@ -6,6 +6,7 @@ public class ProjectileBehaviour : MonoBehaviour
 {
     public float lifespan;
     public GameObject debree;
+    public int damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class ProjectileBehaviour : MonoBehaviour
         if (other.tag != "Player") {
             //print("ups");
             Instantiate(debree, transform.position, Quaternion.identity);
+            other.transform.GetComponent<Enemy1Behaviour>().TakeDamage(damage);
             Destroy(gameObject);
         }
     }

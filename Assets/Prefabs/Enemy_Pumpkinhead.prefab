@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 6171164023750238507}
   m_Layer: 0
   m_Name: Enemy_Pumpkinhead
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,7 +138,7 @@ Transform:
   - {fileID: 6171164023903166765}
   - {fileID: 352509886}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &6171164023750238511
 MeshFilter:
@@ -237,6 +237,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3411abafb3e8a4e9523861c353d7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLife: 10
+  lifeSlider: {fileID: 574731628495111966}
+  maxLife: 10
 --- !u!1 &6171164023903166764
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,3 +448,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5935106202804402194, guid: 9116b7b904b5ca64e986f21d5dcb0995, type: 3}
   m_PrefabInstance: {fileID: 6171164023375904526}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &574731628495111966 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5935106202804402192, guid: 9116b7b904b5ca64e986f21d5dcb0995, type: 3}
+  m_PrefabInstance: {fileID: 6171164023375904526}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

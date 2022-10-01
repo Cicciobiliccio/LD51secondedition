@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 3.59}
+  m_AnchoredPosition: {x: 0, y: 2.61}
   m_SizeDelta: {x: 1153, y: 494}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &3189489975755622023
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 8784051996850796653}
   m_Layer: 0
   m_Name: Enemy_Vampire
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,7 +222,7 @@ Transform:
   - {fileID: 8784051996198746219}
   - {fileID: 3189489975755622136}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &8784051996850796649
 MeshFilter:
@@ -321,6 +321,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3411abafb3e8a4e9523861c353d7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLife: 15
+  lifeSlider: {fileID: 3150975359436299864}
+  maxLife: 15
 --- !u!1001 &8784051996726011464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -440,6 +443,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 9116b7b904b5ca64e986f21d5dcb0995, type: 3}
+--- !u!114 &3150975359436299864 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5935106202804402192, guid: 9116b7b904b5ca64e986f21d5dcb0995, type: 3}
+  m_PrefabInstance: {fileID: 8784051996726011464}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &3150975359436299866 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5935106202804402194, guid: 9116b7b904b5ca64e986f21d5dcb0995, type: 3}
