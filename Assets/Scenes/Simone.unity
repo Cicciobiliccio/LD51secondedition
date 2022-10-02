@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2235,11 +2235,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1525050369994232681, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160.8477
+      value: 193.9334
       objectReference: {fileID: 0}
     - target: {fileID: 1525050369994232681, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 35.756104
+      value: 90.6143
       objectReference: {fileID: 0}
     - target: {fileID: 1525050369994232681, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2271,11 +2271,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1525050369994232681, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 40
+      value: 56.5428
       objectReference: {fileID: 0}
     - target: {fileID: 1525050369994232681, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -41.36499
+      value: -35.258636
       objectReference: {fileID: 0}
     - target: {fileID: 1525050369994232681, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3146,7 +3146,43 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2270179187916805462, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
       propertyPath: m_margin.x
-      value: -0.000015258789
+      value: 485.8363
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270179187916805462, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
+      propertyPath: m_margin.z
+      value: -20.89624
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270179187916805462, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
+      propertyPath: m_fontColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270179187916805462, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.740566
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270179187916805462, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.88972354
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270179187916805462, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270179187916805462, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
+      propertyPath: m_overflowMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270179187916805462, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4290634751
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270179187916805462, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270179187916805462, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2270179187916805463, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
       propertyPath: timerBar
@@ -3222,7 +3258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2270179187916805480, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -371.5689
+      value: -196
       objectReference: {fileID: 0}
     - target: {fileID: 2270179187916805480, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5280,8 +5316,8 @@ RectTransform:
   - {fileID: 562903491}
   - {fileID: 728393228}
   - {fileID: 181894431}
-  - {fileID: 1243925973}
   - {fileID: 1780930505}
+  - {fileID: 1243925973}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
