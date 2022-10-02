@@ -131,6 +131,7 @@ public class PlayerController : MonoBehaviour
 
         if (playerCurrentLife <= 0) {
             print("you are dead");
+            SceneManager.LoadScene(3);
             //FindObjectOfType<AudioManager>().Play(dienoices[Random.Range(0, dienoices.Count)]);
         }
     }
