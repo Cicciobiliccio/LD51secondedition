@@ -11,6 +11,12 @@ public class PortalScript : MonoBehaviour
     float timer;
     public int enemyNumber;
 
+    public GameObject endGamePortal;
+    public int enemyKilled;
+    public int enemyToKillToFinishTheLevel;
+
+    bool portalSpawned;
+
     void Start()
     {
         foreach (GameObject p in GameObject.FindGameObjectsWithTag("Portal"))
@@ -25,6 +31,7 @@ public class PortalScript : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
+            FindObjectOfType<AudioManager>().Play("EnemySpawning");
             timer = spawntime;
             for (int a = 0; a < enemyNumber; a++)
             {
@@ -33,5 +40,16 @@ public class PortalScript : MonoBehaviour
                 Instantiate(selectedEnemy, selectedPortal.transform.position, Quaternion.identity);
             }
         }
+
+        if (enemyKilled >= enemyToKillToFinishTheLevel) {
+            if (!portalSpawned) {
+                FindObjectOfType<AudioManager>().Play("EndGame");
+            }
+            endGamePortal.SetActive(true);
+            portalSpawned = true;
+            
+        }
     }
+
+
 }

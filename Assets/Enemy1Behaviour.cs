@@ -47,6 +47,7 @@ public class Enemy1Behaviour : MonoBehaviour
             dienoices.Add("Die2");
             dienoices.Add("Die3");
             FindObjectOfType<AudioManager>().Play(dienoices[Random.Range(0,dienoices.Count)]);
+            FindObjectOfType<PortalScript>().enemyKilled++;
             Destroy(gameObject);
         }
         lifeSlider.value = (currentLife / maxLife) *10;
