@@ -43,7 +43,7 @@ public class Timer : MonoBehaviour
 
     public void SetTimerBar (float timeRemaining)
     {
-        timerBar.GetComponent<Slider>().value = timeRemaining;
+        timerBar.GetComponent<Slider>().value = timeRemaining/10;
     }
 }
 
