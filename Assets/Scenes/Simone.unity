@@ -6599,11 +6599,11 @@ MonoBehaviour:
   - {fileID: 6171164023750238506, guid: 25be5d71a0c242f4db1a1155a64a0681, type: 3}
   - {fileID: 8784051996850796652, guid: 62d30fab977fb0f4b8a9f1c02583dcad, type: 3}
   portals: []
-  spawntime: 5
+  spawntime: 10
   enemyNumber: 10
   endGamePortal: {fileID: 455662428}
   enemyKilled: 0
-  enemyToKillToFinishTheLevel: 1
+  enemyToKillToFinishTheLevel: 10
 --- !u!1001 &522134091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7063,12 +7063,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 2041495235}
     m_Modifications:
     - target: {fileID: 1525050368992603059, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525050368992603059, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525050368992603059, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525050369392723990, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1525050369392723990, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525050369994232680, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
+      propertyPath: m_Value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1525050369994232681, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
       propertyPath: m_Pivot.x
@@ -7157,6 +7173,14 @@ PrefabInstance:
     - target: {fileID: 1525050369994232682, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
       propertyPath: m_Name
       value: TimerBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525050370503886316, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -10.0874
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525050370503886316, guid: b44bf5a5c52ed6040a16c579fd2435a5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.043701172
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -7929,6 +7953,10 @@ PrefabInstance:
       propertyPath: timerBar
       value: 
       objectReference: {fileID: 1780930504}
+    - target: {fileID: 2270179187916805463, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
+      propertyPath: timeRemaining
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2270179187916805480, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
