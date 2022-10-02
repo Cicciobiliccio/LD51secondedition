@@ -959,8 +959,8 @@ MonoBehaviour:
   fireRatio: 20
   nozzle: {fileID: 2099926270}
   projectileSpeed: 10
-  discreteProjectile: 1
-  laser: 0
+  discreteProjectile: 0
+  laser: 1
   laserDamage: 1
   laserFireRatio: 50
   laserObj: {fileID: 2073980527}
@@ -3822,7 +3822,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
