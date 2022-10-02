@@ -5,10 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EndMenu : MonoBehaviour
 {
-
     public static bool GameOver = true;
-
-    public GameObject EndMenuUI;
 
     public void TryAgain() {
         SceneManager.LoadScene("Scenes/Simone");
@@ -16,6 +13,5 @@ public class EndMenu : MonoBehaviour
 
     public void LoadMenu() {
         SceneManager.LoadScene("Scenes/Elise");
-        Time.timeScale = 1f;
     }
 }
