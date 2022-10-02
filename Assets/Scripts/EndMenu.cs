@@ -14,7 +14,5 @@ public class EndMenu : MonoBehaviour
 
     public void LoadMenu() {
         SceneManager.LoadScene("Scenes/Elise");
-        FindObjectOfType<AudioManager>().StopPlaying("In-GameMusic");
-        FindObjectOfType<AudioManager>().Play("MenuMusic");
     }
 }
