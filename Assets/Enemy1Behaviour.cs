@@ -47,5 +47,6 @@ public class Enemy1Behaviour : MonoBehaviour
 
     public void DamagePlayer() {
         player.GetComponent<PlayerController>().PlayerDamage();
+        FindObjectOfType<AudioManager>().Play("PlayerHit");
     }
 }
