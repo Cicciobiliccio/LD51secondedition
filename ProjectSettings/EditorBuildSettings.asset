@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 0da91b1dc46111d478e3f58a63f0043f
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Elise.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
