@@ -408,20 +408,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: In-Game Music
+  - name: In-GameMusic
     clip: {fileID: 8300000, guid: 5549f90c890420e47a18b89cda7e7e63, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
-  - name: Player Hit
+  - name: PlayerHit
     clip: {fileID: 8300000, guid: 7c85424ab2315ad4493001b14b5e6816, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
-  - name: Menu Music
+  - name: MenuMusic
     clip: {fileID: 8300000, guid: 91ef7af1245e7fc4590136b3b10a41c3, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
 --- !u!1 &118102422
 GameObject:
