@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class TimeBar : MonoBehaviour
+public class TimerBar : MonoBehaviour
 {
     public Slider slider;
 
@@ -13,7 +13,6 @@ public class TimeBar : MonoBehaviour
         slider.maxValue = time;
         slider.value = time;
     }
-
     public void SetTime(float time)
     {
         slider.value = time;

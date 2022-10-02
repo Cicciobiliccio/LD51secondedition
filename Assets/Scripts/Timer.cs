@@ -10,14 +10,14 @@ public class Timer : MonoBehaviour
     public float timeRemaining = 11;
     public int periodCounter = 0;
     public TMP_Text timeText;
-    // public GameObject timerBar;
+    public GameObject timerBar;
 
     void Update()
     {
         if (timeRemaining >= 0)
         {
             timeRemaining -= Time.deltaTime;
-            // SetTimerBar(timeRemaining);
+            SetTimerBar(timeRemaining);
             DisplayTime(timeRemaining);
         }
         else
@@ -25,7 +25,7 @@ public class Timer : MonoBehaviour
             Debug.Log("Time has run out!");
             timeRemaining = 11;
             periodCounter += 1;
-            // SetTimerBar(timeRemaining);
+            SetTimerBar(timeRemaining);
         }
     }
 
@@ -41,10 +41,10 @@ public class Timer : MonoBehaviour
         }
     }
 
-    // public void SetTimerBar (float timeRemaining)
-    // {
-    //     timerBar.GetComponent<Slider>().value = timeRemaining;
-    // }
+    public void SetTimerBar (float timeRemaining)
+    {
+        timerBar.GetComponent<Slider>().value = timeRemaining;
+    }
 }
 
 
