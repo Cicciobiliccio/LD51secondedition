@@ -17,21 +17,21 @@ public class AudioManager : MonoBehaviour {
         if (volume == -40) {
             volume = -80;
         }
-        audioMixer.SetFloat("Volume", volume);
+        audioMixer.SetFloat("MasterVolume", volume);
     }
 
     public void SetMusicVolume (float volume) {
         if (volume == -40) {
             volume = -80;
         }
-        audioMixer.SetFloat("Volume (of Music)", volume);
+        audioMixer.SetFloat("MusicVolume", volume);
     }
 
     public void SetFxVolume (float volume) {
         if (volume == -40) {
             volume = -80;
         }
-        audioMixer.SetFloat("Volume (of Sound Effects)", volume);
+        audioMixer.SetFloat("FXVolume", volume);
     }
 
 
