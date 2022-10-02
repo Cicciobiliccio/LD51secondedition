@@ -1121,8 +1121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 1
-  explosion: {fileID: 0}
-  explosionPosition: {fileID: 0}
+  explosion: {fileID: 8162569862938994914, guid: 3e0c9b57b55e44e0783cbe71f80e887f, type: 3}
+  explosionPosition: {fileID: 1286171405}
 --- !u!1 &183663878
 GameObject:
   m_ObjectHideFlags: 0
@@ -7554,8 +7554,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 1
-  explosion: {fileID: 0}
-  explosionPosition: {fileID: 0}
+  explosion: {fileID: 8162569862938994914, guid: 3e0c9b57b55e44e0783cbe71f80e887f, type: 3}
+  explosionPosition: {fileID: 1286171405}
 --- !u!224 &728393228
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9224,6 +9224,37 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2270179187916805480, guid: 66036908e94547b4faf41000aea8b8a6, type: 3}
   m_PrefabInstance: {fileID: 948736292}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1286171404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1286171405}
+  m_Layer: 0
+  m_Name: ExplosionPositionForMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1286171405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286171404}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1377624879
 GameObject:
   m_ObjectHideFlags: 0
