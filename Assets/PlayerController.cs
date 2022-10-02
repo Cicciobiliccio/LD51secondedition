@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
 
     public float health;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -121,5 +123,10 @@ public class PlayerController : MonoBehaviour
     {
         playerCurrentLife--;
         healthBar.GetComponent<Slider>().value = (playerCurrentLife / playerMaxLife) * 10;
+
+        if (playerCurrentLife <= 0) {
+            print("you are dead");
+            //FindObjectOfType<AudioManager>().Play(dienoices[Random.Range(0, dienoices.Count)]);
+        }
     }
 }

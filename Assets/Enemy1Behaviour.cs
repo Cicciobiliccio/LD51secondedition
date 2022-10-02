@@ -13,6 +13,7 @@ public class Enemy1Behaviour : MonoBehaviour
     public float maxLife;
     public float attackDistance;
     Animator anim;
+    AudioSource enemyVoice;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class Enemy1Behaviour : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         currentLife = maxLife;
         anim = GetComponent<Animator>();
+        enemyVoice = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,6 +42,11 @@ public class Enemy1Behaviour : MonoBehaviour
     public void TakeDamage(float damage) {
         currentLife -= damage;
         if (currentLife <= 0) {
+            List<string> dienoices = new List<string>();
+            dienoices.Add("Die1");
+            dienoices.Add("Die2");
+            dienoices.Add("Die3");
+            FindObjectOfType<AudioManager>().Play(dienoices[Random.Range(0,dienoices.Count)]);
             Destroy(gameObject);
         }
         lifeSlider.value = (currentLife / maxLife) *10;
