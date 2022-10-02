@@ -281,13 +281,13 @@ MonoBehaviour:
     audioMixerGroup: {fileID: 4660762095731032793, guid: ec80d38e33b620045837d53460b72dda, type: 2}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: EndLevel
     clip: {fileID: 8300000, guid: 3bae1f962d32bd94f8ee6388e3f1c968, type: 3}
     audioMixerGroup: {fileID: 4660762095731032793, guid: ec80d38e33b620045837d53460b72dda, type: 2}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   audioMixer: {fileID: 24100000, guid: ec80d38e33b620045837d53460b72dda, type: 2}
