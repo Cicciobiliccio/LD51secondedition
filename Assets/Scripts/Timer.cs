@@ -33,7 +33,7 @@ public class Timer : MonoBehaviour
     {
         Debug.Log(timeToDisplay);
         if (timeToDisplay < 1) {
-            timeText.text = "Enemies Spawned";
+            timeText.text = "RESET";
         }
         else {
             float seconds = Mathf.FloorToInt(timeToDisplay % 60);
