@@ -21,8 +21,8 @@ public class EndGamePortalScript : MonoBehaviour
         if (other.tag == "Player")
         {
             SceneManager.LoadScene("Artem_winScene");
-            FindObjectOfType<AudioManager>().Play("In-GameMusic");
-            FindObjectOfType<AudioManager>().StopPlaying("MenuMusic");
+            FindObjectOfType<AudioManager>().StopPlaying("In-GameMusic");
+            FindObjectOfType<AudioManager>().Play("MenuMusic");
 
         }
     }
