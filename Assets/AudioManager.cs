@@ -10,6 +10,9 @@ public class AudioManager : MonoBehaviour {
     public AudioMixer audioMixer;
 
     public void SetVolume (float volume) {
+        if (volume == -40) {
+            volume = -80;
+        }
         audioMixer.SetFloat("Volume", volume);
     }
 
