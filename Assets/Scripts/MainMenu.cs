@@ -27,7 +27,7 @@ public class MainMenu : MonoBehaviour {
     public void explosionEffect ()
     {   
         Instantiate(explosion, explosionPosition.position, Quaternion.identity);
-        FindObjectOfType<AudioManager>().Play("Die2");
+        FindObjectOfType<AudioManager>().Play("MenuClick");
     }
 
     public void QuitGame ()
