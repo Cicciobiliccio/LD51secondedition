@@ -6484,7 +6484,7 @@ MonoBehaviour:
   enemyNumber: 10
   endGamePortal: {fileID: 455662428}
   enemyKilled: 0
-  enemyToKillToFinishTheLevel: 20
+  enemyToKillToFinishTheLevel: 1
 --- !u!1001 &522134091
 PrefabInstance:
   m_ObjectHideFlags: 0
