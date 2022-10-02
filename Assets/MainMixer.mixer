@@ -50,7 +50,9 @@ AudioMixerController:
   m_UpdateMode: 0
   m_ExposedParameters:
   - guid: 2bb4e44a5efbcb94ea907988996ea357
-    name: Volume
+    name: MyExposedParam
+  - guid: e18dbd6c898fca3419d5e4455579796c
+    name: MyExposedParam 1
   m_AudioMixerGroupViews:
   - guids:
     - d5f92eee46f810e4dbd1c8ea8d1abeb9

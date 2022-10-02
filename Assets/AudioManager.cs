@@ -20,6 +20,20 @@ public class AudioManager : MonoBehaviour {
         audioMixer.SetFloat("Volume", volume);
     }
 
+    public void SetMusicVolume (float volume) {
+        if (volume == -40) {
+            volume = -80;
+        }
+        audioMixer.SetFloat("Volume (of Music)", volume);
+    }
+
+    public void SetFxVolume (float volume) {
+        if (volume == -40) {
+            volume = -80;
+        }
+        audioMixer.SetFloat("Volume (of Sound Effects)", volume);
+    }
+
 
     // Start is called before the first frame update
     void Awake() {
