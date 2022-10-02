@@ -1399,6 +1399,8 @@ MonoBehaviour:
   - {fileID: 7399762538700170275, guid: 344b087bac1e80c4697d265873dc1fd4, type: 3}
   - {fileID: 6171164023750238506, guid: 25be5d71a0c242f4db1a1155a64a0681, type: 3}
   - {fileID: 8784051996850796652, guid: 62d30fab977fb0f4b8a9f1c02583dcad, type: 3}
+  - {fileID: 6828770986285615122, guid: 3de3191fe05c32c468a1dc00fd46648f, type: 3}
+  - {fileID: 125418047109280076, guid: 23deddd726e74ac4abdf2590304e099a, type: 3}
   portals: []
   spawntime: 10
   enemyNumber: 10
