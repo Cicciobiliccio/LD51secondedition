@@ -47,13 +47,13 @@ MonoBehaviour:
   sounds:
   - name: MenuMusic
     clip: {fileID: 8300000, guid: 91ef7af1245e7fc4590136b3b10a41c3, type: 3}
-    volume: 1
+    volume: 0.6
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: In-GameMusic
     clip: {fileID: 8300000, guid: 5549f90c890420e47a18b89cda7e7e63, type: 3}
-    volume: 1
+    volume: 0.6
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -173,6 +173,66 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Die16
     clip: {fileID: 8300000, guid: 8408e03dc5e013c4ba1d11c00a684a3c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MenuClick
+    clip: {fileID: 8300000, guid: 36f566adf0d5e9d4badfe4095230c4f4, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bullet1
+    clip: {fileID: 8300000, guid: c9b391bd98200e04ea895a111c627d50, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bullet2
+    clip: {fileID: 8300000, guid: 4d063280da597a3499f9b52bce14acab, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Bullet3
+    clip: {fileID: 8300000, guid: f530465de8e6a3c4ea0a59ff04da243a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Explosion1
+    clip: {fileID: 8300000, guid: f7752603bafe21a428d33d1d09613959, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Explosion2
+    clip: {fileID: 8300000, guid: caa92acacce975f44b425180f1482365, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Explosion3
+    clip: {fileID: 8300000, guid: e20862b2221d06142b191b26b975027a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Explosion4
+    clip: {fileID: 8300000, guid: 27277a4ed5063f74486b5dd226b477ac, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Explosion5
+    clip: {fileID: 8300000, guid: 1907eb78e15b37147acbfeef901f0287, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Fizz
+    clip: {fileID: 8300000, guid: 7a8a021793b71b84c925437c1b8b19b4, type: 3}
     volume: 1
     pitch: 1
     loop: 0
