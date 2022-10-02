@@ -2128,10 +2128,10 @@ MonoBehaviour:
   - {fileID: 6828770986285615122, guid: 3de3191fe05c32c468a1dc00fd46648f, type: 3}
   portals: []
   spawntime: 10
-  enemyNumber: 10
+  enemyNumber: 20
   endGamePortal: {fileID: 455662428}
   enemyKilled: 0
-  enemyToKillToFinishTheLevel: 10
+  enemyToKillToFinishTheLevel: 45
 --- !u!1001 &522134091
 PrefabInstance:
   m_ObjectHideFlags: 0
