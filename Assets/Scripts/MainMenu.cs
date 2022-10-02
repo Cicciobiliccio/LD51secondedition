@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour {
         }
         Debug.Log("Play Game!");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
+        Play("In-GameMusic");
         
     }
 
