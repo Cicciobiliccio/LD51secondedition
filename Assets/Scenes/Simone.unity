@@ -959,8 +959,8 @@ MonoBehaviour:
   fireRatio: 20
   nozzle: {fileID: 2099926270}
   projectileSpeed: 10
-  discreteProjectile: 0
-  laser: 1
+  discreteProjectile: 1
+  laser: 0
   laserDamage: 1
   laserFireRatio: 50
   laserObj: {fileID: 2073980527}
