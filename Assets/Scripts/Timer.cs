@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+
 
 public class Timer : MonoBehaviour
 {
     public float timeRemaining = 11;
     public int periodCounter = 0;
     public TMP_Text timeText;
+    public GameObject timerBar;
+
     void Update()
     {
         if (timeRemaining >= 0)
         {
             timeRemaining -= Time.deltaTime;
+            SetTimerBar(timeRemaining);
             DisplayTime(timeRemaining);
         }
         else
@@ -20,8 +25,10 @@ public class Timer : MonoBehaviour
             Debug.Log("Time has run out!");
             timeRemaining = 11;
             periodCounter += 1;
+            SetTimerBar(timeRemaining);
         }
     }
+
     void DisplayTime(float timeToDisplay)
     {
         Debug.Log(timeToDisplay);
@@ -33,4 +40,13 @@ public class Timer : MonoBehaviour
             timeText.text = string.Format("{00}", seconds);
         }
     }
+
+    public void SetTimerBar (float timeRemaining)
+    {
+        timerBar.GetComponent<Slider>().value = timeRemaining;
+    }
 }
+
+
+
+
