@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -131,6 +132,13 @@ public class PlayerController : MonoBehaviour
         if (playerCurrentLife <= 0) {
             print("you are dead");
             //FindObjectOfType<AudioManager>().Play(dienoices[Random.Range(0, dienoices.Count)]);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "EndLevelPortal") {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

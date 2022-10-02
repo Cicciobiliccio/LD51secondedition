@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 8215478f4d0626b4d9ea309b4d3f00b4, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: fd90480719c95bf468f8055a7c29d440, type: 2}
 --- !u!65 &9471988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4302,7 +4302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1301069837159856438, guid: 7f71d67a854b31c41bc9df6ec8276cc1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.2
+      value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 1301069837159856438, guid: 7f71d67a854b31c41bc9df6ec8276cc1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4627,7 +4627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: df70fbbd15780a740b12774cc383a438, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: df70fbbd15780a740b12774cc383a438, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9347,7 +9347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &1048724835140358906
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11304,10 +11304,6 @@ PrefabInstance:
     - target: {fileID: 8782308079447008176, guid: 9b28ad745a4b3f14fbd06d9277cc91ac, type: 3}
       propertyPath: m_Name
       value: Portal Particles
-      objectReference: {fileID: 0}
-    - target: {fileID: 8782308079447008176, guid: 9b28ad745a4b3f14fbd06d9277cc91ac, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8782308079447008179, guid: 9b28ad745a4b3f14fbd06d9277cc91ac, type: 3}
       propertyPath: m_RootOrder
