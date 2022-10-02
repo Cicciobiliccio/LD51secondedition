@@ -46,6 +46,18 @@ public class Enemy1Behaviour : MonoBehaviour
             dienoices.Add("Die1");
             dienoices.Add("Die2");
             dienoices.Add("Die3");
+            dienoices.Add("Die4");
+            dienoices.Add("Die5");
+            dienoices.Add("Die6");
+            dienoices.Add("Die7");
+            dienoices.Add("Die8");
+            dienoices.Add("Die9");
+            dienoices.Add("Die10");
+            dienoices.Add("Die11");
+            dienoices.Add("Die12");
+            dienoices.Add("Die13");
+            dienoices.Add("Die14");
+            dienoices.Add("Die15");
             FindObjectOfType<AudioManager>().Play(dienoices[Random.Range(0,dienoices.Count)]);
             FindObjectOfType<PortalScript>().enemyKilled++;
             Destroy(gameObject);
