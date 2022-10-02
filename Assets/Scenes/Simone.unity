@@ -9401,50 +9401,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
-      propertyPath: sounds.Array.size
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
-      propertyPath: sounds.Array.data[33].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ddb24fd6d32f5e4a9963c971adc6573, type: 3}
-    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
-      propertyPath: sounds.Array.data[33].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
-      propertyPath: sounds.Array.data[33].name
-      value: EnemySpawning
-      objectReference: {fileID: 0}
-    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
-      propertyPath: sounds.Array.data[34].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 3bae1f962d32bd94f8ee6388e3f1c968, type: 3}
-    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
-      propertyPath: sounds.Array.data[34].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
-      propertyPath: sounds.Array.data[34].name
-      value: EndLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
-      propertyPath: sounds.Array.data[33].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
-      propertyPath: sounds.Array.data[34].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
-      propertyPath: sounds.Array.data[33].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
-      propertyPath: sounds.Array.data[34].volume
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5324424476359365037, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
       propertyPath: m_RootOrder
       value: 0
