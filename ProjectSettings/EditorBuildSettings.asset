@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Artem.unity
+    path: 
     guid: 0da91b1dc46111d478e3f58a63f0043f
   - enabled: 1
     path: Assets/Scenes/Elise.unity
@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Simone.unity
     guid: 276e59e4a8366bc41b3a61e427641f52
+  - enabled: 1
+    path: Assets/Scenes/Simone level2.unity
+    guid: 6427e584a200ca34e97aa91dcc857dde
   m_configObjects: {}

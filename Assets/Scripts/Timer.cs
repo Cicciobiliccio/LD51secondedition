@@ -31,7 +31,7 @@ public class Timer : MonoBehaviour
 
     void DisplayTime(float timeToDisplay)
     {
-        Debug.Log(timeToDisplay);
+        //Debug.Log(timeToDisplay);
         if (timeToDisplay < 1) {
             timeText.text = "RESET";
         }
