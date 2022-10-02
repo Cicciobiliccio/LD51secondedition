@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+    public 
 
     void Update (){
         if (Input.GetKeyDown(KeyCode.Escape)){
@@ -19,15 +21,20 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    void Resume() {
+    public void Resume() {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = true;
     }
 
-    void Pause () {
+    public void Pause () {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = false;
+    }
+
+    public void LoadMenu() {
+        SceneManager.LoadScene("Scenes/Elise");
+        Time.timeScale = 1f;
     }
 }
