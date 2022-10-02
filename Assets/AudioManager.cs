@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour {
 
     [SerializeField] private AudioMixerGroup musicMixerGroup;
     [SerializeField] private AudioMixerGroup fxMixerGroup;
+    [SerializeField] private AudioMixerGroup MasterMixerGroup;
     public Sound[] sounds;
 
     public AudioMixer audioMixer;
@@ -62,6 +63,10 @@ public class AudioManager : MonoBehaviour {
                 
                 case Sound.AudioTypes.music:
                     s.source.outputAudioMixerGroup = musicMixerGroup;
+                    break;
+
+                case Sound.AudioTypes.information:
+                    s.source.outputAudioMixerGroup = MasterMixerGroup;
                     break;
             }
         }

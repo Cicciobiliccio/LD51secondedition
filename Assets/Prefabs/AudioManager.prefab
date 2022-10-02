@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicMixerGroup: {fileID: -8802151499958083508, guid: ec80d38e33b620045837d53460b72dda, type: 2}
   fxMixerGroup: {fileID: 4660762095731032793, guid: ec80d38e33b620045837d53460b72dda, type: 2}
+  MasterMixerGroup: {fileID: 24300002, guid: ec80d38e33b620045837d53460b72dda, type: 2}
   sounds:
   - name: MenuMusic
     audioType: 1
@@ -312,17 +313,17 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: EnemySpawning
-    audioType: 0
+    audioType: 2
     clip: {fileID: 8300000, guid: 9ddb24fd6d32f5e4a9963c971adc6573, type: 3}
-    audioMixerGroup: {fileID: 4660762095731032793, guid: ec80d38e33b620045837d53460b72dda, type: 2}
+    audioMixerGroup: {fileID: 24300002, guid: ec80d38e33b620045837d53460b72dda, type: 2}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: EndLevel
-    audioType: 0
+    audioType: 2
     clip: {fileID: 8300000, guid: 3bae1f962d32bd94f8ee6388e3f1c968, type: 3}
-    audioMixerGroup: {fileID: 4660762095731032793, guid: ec80d38e33b620045837d53460b72dda, type: 2}
+    audioMixerGroup: {fileID: 24300002, guid: ec80d38e33b620045837d53460b72dda, type: 2}
     volume: 1
     pitch: 1
     loop: 0
