@@ -93,12 +93,6 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Die3
-    clip: {fileID: 8300000, guid: 05356dc70238eaf468042f2b30cecd2f, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
   - name: Die4
     clip: {fileID: 8300000, guid: 8b88cd686a8e2f24db7d1c447e3777f1, type: 3}
     volume: 1
