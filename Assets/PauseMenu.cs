@@ -24,12 +24,16 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        FindObjectOfType<AudioManager>().StopPlaying("MenuMusic");
+        FindObjectOfType<AudioManager>().Play("In-GameMusic");
     }
 
     public void Pause () {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        FindObjectOfType<AudioManager>().StopPlaying("In-GameMusic");
+        FindObjectOfType<AudioManager>().Play("MenuMusic");
     }
 
     public void LoadMenu() {

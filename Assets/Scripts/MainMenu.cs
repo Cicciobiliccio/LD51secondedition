@@ -16,6 +16,7 @@ public class MainMenu : MonoBehaviour {
         }
         Debug.Log("Play Game!");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        FindObjectOfType<AudioManager>().StopPlaying("MenuMusic");
         FindObjectOfType<AudioManager>().Play("In-GameMusic");
         
     }
