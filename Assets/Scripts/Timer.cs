@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 11;
+    public float timeRemaining = 10;
     public int periodCounter = 0;
     public TMP_Text timeText;
     public GameObject timerBar;
@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
         else
         {
             Debug.Log("Time has run out!");
-            timeRemaining = 11;
+            timeRemaining = 10;
             periodCounter += 1;
             SetTimerBar(timeRemaining);
         }
@@ -33,7 +33,7 @@ public class Timer : MonoBehaviour
     {
         Debug.Log(timeToDisplay);
         if (timeToDisplay < 1) {
-            timeText.text = "RESET";
+            timeText.text = "Enemies Spawned";
         }
         else {
             float seconds = Mathf.FloorToInt(timeToDisplay % 60);
