@@ -237,4 +237,16 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: LaserLong
+    clip: {fileID: 8300000, guid: 21b4ca21abc513944a00b6c725d3751c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: LaserShort
+    clip: {fileID: 8300000, guid: 309aa5ef62507f445aa459719d699ab4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
   audioMixer: {fileID: 24100000, guid: ec80d38e33b620045837d53460b72dda, type: 2}

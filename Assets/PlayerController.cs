@@ -49,12 +49,14 @@ public class PlayerController : MonoBehaviour
 
         //Firing projectile
         if (discreteProjectile) {
+
             fireTimer -= Time.deltaTime;
             if (Input.GetButton("Fire1") && fireTimer <= 0)
             {
                 fireTimer = 1 / fireRatio;
 
                 GameObject proj = Instantiate(projectile, nozzle.position, Quaternion.identity);
+                FindObjectOfType<AudioManager>().Play("Bullet2");
 
                 proj.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * projectileSpeed, ForceMode.Impulse);
             }
@@ -67,6 +69,7 @@ public class PlayerController : MonoBehaviour
             RaycastHit hit;
             if (Input.GetButton("Fire1"))
             {
+                FindObjectOfType<AudioManager>().Play("LaserLong");
                 laserObj.SetActive(true);
                 Vector3[] laserPositions = new Vector3[2];
                 laserPositions[0] = nozzle.transform.position;
@@ -99,6 +102,7 @@ public class PlayerController : MonoBehaviour
             }
             else {
                 laserObj.SetActive(false);
+                FindObjectOfType<AudioManager>().StopPlaying("LaserLong");
             }
 
         }
