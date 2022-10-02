@@ -1484,8 +1484,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  playerMaxLife: 10
-  playerCurrentLife: 10
+  playerMaxLife: 3
+  playerCurrentLife: 3
   healthBar: {fileID: 562903490}
   projectile: {fileID: 2116313732473494880, guid: 6c3afc515aae43f42b9f3239bef23ee5, type: 3}
   fireRatio: 20
