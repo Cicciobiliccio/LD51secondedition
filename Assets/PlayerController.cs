@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
                             if (laserTimer <= 0) {
                                 laserTimer = 1 / laserFireRatio;
                                 hit.transform.GetComponent<Enemy1Behaviour>().TakeDamage(laserDamage);
-                                print("hit");
+                                // print("hit");
                             }
                             
                         }
