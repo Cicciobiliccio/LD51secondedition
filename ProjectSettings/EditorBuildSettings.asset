@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Artem.unity
     guid: 4db2a58eed5134eb295f87b57cff590e
+  - enabled: 1
+    path: Assets/Scenes/Artem_winScene.unity
+    guid: 573c32e5d6da847358f24aa5722a0140
   m_configObjects: {}
