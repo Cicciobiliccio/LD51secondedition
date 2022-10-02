@@ -4,17 +4,22 @@ using System;
 
 public class AudioManager : MonoBehaviour {
 
-    public Sound[] sounds;
+    
     public static AudioManager instance;
+
+    [SerializeField] private AudioMixerGroup musicMixerGroup;
+    [SerializeField] private AudioMixerGroup fxMixerGroup;
+    public Sound[] sounds;
 
     public AudioMixer audioMixer;
 
-    public void SetVolume (float volume) {
+    public void SetMainVolume (float volume) {
         if (volume == -40) {
             volume = -80;
         }
         audioMixer.SetFloat("Volume", volume);
     }
+
 
     // Start is called before the first frame update
     void Awake() {
