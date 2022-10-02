@@ -37,6 +37,14 @@ public class AudioManager : MonoBehaviour {
         s.source.Play();
     }
 
+    public void StopPlaying (string name) {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null) {
+            return;
+        }       
+        s.source.Stop ();
+    }
+
     void Start() {
         Play("MenuMusic");
     }

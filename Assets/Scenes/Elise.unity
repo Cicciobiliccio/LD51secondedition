@@ -1136,7 +1136,6 @@ GameObject:
   - component: {fileID: 824682564}
   - component: {fileID: 824682563}
   - component: {fileID: 824682562}
-  - component: {fileID: 824682561}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1144,19 +1143,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &824682561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824682559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 136bc8116fa840046b7156364a717cca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: ec80d38e33b620045837d53460b72dda, type: 2}
 --- !u!114 &824682562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1912,7 +1898,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 824682561}
+      - m_Target: {fileID: 1563207981}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
@@ -2126,6 +2112,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
+--- !u!114 &1563207981 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9113235490067655437, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
+  m_PrefabInstance: {fileID: 1563207980}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 136bc8116fa840046b7156364a717cca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1570586303
 GameObject:
   m_ObjectHideFlags: 0
