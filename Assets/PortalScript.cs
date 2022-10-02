@@ -43,7 +43,7 @@ public class PortalScript : MonoBehaviour
 
         if (enemyKilled >= enemyToKillToFinishTheLevel) {
             if (!portalSpawned) {
-                FindObjectOfType<AudioManager>().Play("EndGame");
+                FindObjectOfType<AudioManager>().Play("EndLevel");
             }
             endGamePortal.SetActive(true);
             portalSpawned = true;
