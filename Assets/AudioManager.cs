@@ -1,6 +1,7 @@
 using UnityEngine.Audio;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour {
 
@@ -10,15 +11,22 @@ public class AudioManager : MonoBehaviour {
     [SerializeField] private AudioMixerGroup musicMixerGroup;
     [SerializeField] private AudioMixerGroup fxMixerGroup;
     [SerializeField] private AudioMixerGroup MasterMixerGroup;
+    
     public Sound[] sounds;
 
     public AudioMixer audioMixer;
+
+    public Slider masterSlider;
+    public Slider musicSlider;
+    public Slider FxSlider;
 
     public void SetMainVolume (float volume) {
         if (volume == -40) {
             volume = -80;
         }
         audioMixer.SetFloat("MasterVolume", volume);
+        PlayerPrefs.SetFloat("MasterVolume", volume);
+        PlayerPrefs.Save();
     }
 
     public void SetMusicVolume (float volume) {
@@ -26,6 +34,8 @@ public class AudioManager : MonoBehaviour {
             volume = -80;
         }
         audioMixer.SetFloat("MusicVolume", volume);
+        PlayerPrefs.SetFloat("MusicVolume", volume);
+        PlayerPrefs.Save();
     }
 
     public void SetFxVolume (float volume) {
@@ -33,6 +43,8 @@ public class AudioManager : MonoBehaviour {
             volume = -80;
         }
         audioMixer.SetFloat("FXVolume", volume);
+        PlayerPrefs.SetFloat("FXVolume", volume);
+        PlayerPrefs.Save();
     }
 
 
@@ -91,6 +103,29 @@ public class AudioManager : MonoBehaviour {
 
     void Start() {
         Play("MenuMusic");
-    }
+        
+        if (PlayerPrefs.HasKey("MasterVolume")) {
+            masterSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MasterVolume");
+        } else {
+            audioMixer.GetFloat("MasterVolume", out float MasterVolume);
+            PlayerPrefs.SetFloat("MasterVolume", MasterVolume);
+            PlayerPrefs.Save();
+        }
 
+        if (PlayerPrefs.HasKey("MusicVolume")) {
+            musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MusicVolume");
+        } else {
+            audioMixer.GetFloat("MusicVolume", out float MusicVolume);
+            PlayerPrefs.SetFloat("MusicVolume", MusicVolume);
+            PlayerPrefs.Save();
+        }
+
+        if (PlayerPrefs.HasKey("FXVolume")) {
+            FxSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("FXVolume");
+        } else {
+            audioMixer.GetFloat("FXVolume", out float FXVolume);
+            PlayerPrefs.SetFloat("FXVolume", FXVolume);
+            PlayerPrefs.Save();
+        }
+    }
 }

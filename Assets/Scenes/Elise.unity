@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5002199}
   - component: {fileID: 5002198}
+  - component: {fileID: 5002200}
   m_Layer: 0
   m_Name: ScriptControler
   m_TagString: Untagged
@@ -175,6 +176,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5002200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5002197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 936073ceb562fe743920488e1e611d9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: ec80d38e33b620045837d53460b72dda, type: 2}
+  masterSlider: {fileID: 1650746892}
+  musicSlider: {fileID: 343310423}
+  FxSlider: {fileID: 913560737}
 --- !u!1 &224385168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,6 +2165,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5002200}
+        m_TargetAssemblyTypeName: SetVolumeSliders, Assembly-CSharp
+        m_MethodName: SetSliders
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1142287117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3090,6 +3119,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
+      propertyPath: FxSlider
+      value: 
+      objectReference: {fileID: 913560737}
+    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
+      propertyPath: musicSlider
+      value: 
+      objectReference: {fileID: 343310423}
+    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
+      propertyPath: masterSlider
+      value: 
+      objectReference: {fileID: 1650746892}
     - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
       propertyPath: sounds.Array.size
       value: 36
