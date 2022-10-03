@@ -3090,6 +3090,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
+      propertyPath: sounds.Array.size
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
+      propertyPath: sounds.Array.data[35].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8766a57e99685704097d170640074fc6, type: 3}
+    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
+      propertyPath: sounds.Array.data[35].name
+      value: Victory
+      objectReference: {fileID: 0}
+    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
+      propertyPath: sounds.Array.data[35].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
+      propertyPath: sounds.Array.data[35].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
+      propertyPath: sounds.Array.data[35].audioType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5324424476359365036, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
+      propertyPath: sounds.Array.data[35].audioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: ec80d38e33b620045837d53460b72dda, type: 2}
     - target: {fileID: 5324424476359365037, guid: 8b24a1f8fe3c2a54191484933957a608, type: 3}
       propertyPath: m_RootOrder
       value: 0
