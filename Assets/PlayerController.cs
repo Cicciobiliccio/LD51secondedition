@@ -133,7 +133,7 @@ public class PlayerController : MonoBehaviour
             print("you are dead");
             FindObjectOfType<AudioManager>().StopPlaying("In-GameMusic");
             FindObjectOfType<AudioManager>().Play("IntroMusic");
-            FindObjectOfType<AudioManager>().StopPlaying("GameOver1");
+            FindObjectOfType<AudioManager>().Play("GameOver1");
             SceneManager.LoadScene(3);
             //FindObjectOfType<AudioManager>().Play(dienoices[Random.Range(0, dienoices.Count)]);
         }
